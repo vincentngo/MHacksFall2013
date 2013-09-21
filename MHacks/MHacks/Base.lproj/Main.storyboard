@@ -289,19 +289,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected metro station:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-Je-CJw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected metro station:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-Je-CJw">
                                 <rect key="frame" x="20" y="70" width="178" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erG-ah-pSk">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erG-ah-pSk">
                                 <rect key="frame" x="20" y="126" width="134" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ori-AR-QTb">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ori-AR-QTb">
                                 <rect key="frame" x="0.0" y="406" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="401457290.854711">
@@ -329,7 +329,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
                             </datePicker>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="56e-Rl-czD">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="56e-Rl-czD">
                                 <rect key="frame" x="61" y="366" width="199" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -339,7 +339,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Metro"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-Xe-4Dt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-Xe-4Dt">
                                 <rect key="frame" x="278" y="70" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -350,14 +350,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="Bi1-3e-Sym" kind="push" identifier="ShowTrainChecker" id="y15-Tn-aXf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destination:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URv-Wl-sKp">
-                                <rect key="frame" x="20" y="196" width="92" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URv-Wl-sKp">
+                                <rect key="frame" x="20" y="223" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdd-QL-wVs">
-                                <rect key="frame" x="20" y="225" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdd-QL-wVs">
+                                <rect key="frame" x="20" y="252" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -365,8 +365,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="keyboardDone:" destination="AOo-LX-e5r" eventType="editingDidEndOnExit" id="OwJ-JX-xdw"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNV-5N-Mqk">
-                                <rect key="frame" x="20" y="263" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNV-5N-Mqk">
+                                <rect key="frame" x="20" y="290" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -374,8 +374,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="keyboardDone:" destination="AOo-LX-e5r" eventType="editingDidEndOnExit" id="W0f-RS-G7G"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-oR-y6D">
-                                <rect key="frame" x="20" y="301" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-oR-y6D">
+                                <rect key="frame" x="20" y="328" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -383,25 +383,69 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="keyboardDone:" destination="AOo-LX-e5r" eventType="editingDidEndOnExit" id="t5n-2k-Zwk"/>
                                 </connections>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97P-M9-KtH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97P-M9-KtH">
                                 <rect key="frame" x="278" y="97" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66988201530000002" green="0.0" blue="0.015791611189999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metro stop displayed here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91g-da-Q2V">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metro stop displayed here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91g-da-Q2V">
                                 <rect key="frame" x="20" y="97" width="201" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrentLocation displayed here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Eeg-2H-g38">
+                                <rect key="frame" x="20" y="155" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aqh-5B-pwA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MhG-Je-CJw" firstAttribute="top" secondItem="BFQ-pw-7hY" secondAttribute="bottom" constant="6" id="19E-m4-qP6"/>
+                            <constraint firstItem="Eeg-2H-g38" firstAttribute="leading" secondItem="URv-Wl-sKp" secondAttribute="leading" id="3YO-Kk-jFp"/>
+                            <constraint firstItem="97P-M9-KtH" firstAttribute="bottom" secondItem="91g-da-Q2V" secondAttribute="bottom" id="48c-8h-4Ak"/>
+                            <constraint firstItem="56e-Rl-czD" firstAttribute="centerX" secondItem="IfU-oR-y6D" secondAttribute="centerX" id="5tE-42-VfT"/>
+                            <constraint firstItem="97P-M9-KtH" firstAttribute="leading" secondItem="Xm2-Xe-4Dt" secondAttribute="leading" id="6FI-8m-P02"/>
+                            <constraint firstItem="tNV-5N-Mqk" firstAttribute="top" secondItem="sdd-QL-wVs" secondAttribute="bottom" constant="8" symbolic="YES" id="BzR-qD-8ax"/>
+                            <constraint firstItem="sdd-QL-wVs" firstAttribute="trailing" secondItem="Eeg-2H-g38" secondAttribute="trailing" id="Bzn-pk-G9t"/>
+                            <constraint firstItem="IfU-oR-y6D" firstAttribute="top" secondItem="tNV-5N-Mqk" secondAttribute="bottom" constant="8" symbolic="YES" id="Cdj-AA-tMW"/>
+                            <constraint firstItem="56e-Rl-czD" firstAttribute="top" secondItem="IfU-oR-y6D" secondAttribute="bottom" constant="8" symbolic="YES" id="DAc-if-syL"/>
+                            <constraint firstAttribute="bottom" secondItem="Ori-AR-QTb" secondAttribute="bottom" id="EDq-kw-osP"/>
+                            <constraint firstItem="MhG-Je-CJw" firstAttribute="leading" secondItem="91g-da-Q2V" secondAttribute="leading" id="IvZ-hs-RtJ"/>
+                            <constraint firstItem="erG-ah-pSk" firstAttribute="top" secondItem="91g-da-Q2V" secondAttribute="bottom" constant="8" symbolic="YES" id="JZH-zH-Iuw"/>
+                            <constraint firstItem="MhG-Je-CJw" firstAttribute="top" secondItem="Xm2-Xe-4Dt" secondAttribute="top" id="Mft-Jh-E97"/>
+                            <constraint firstItem="91g-da-Q2V" firstAttribute="leading" secondItem="erG-ah-pSk" secondAttribute="leading" id="Mzz-fc-22g"/>
+                            <constraint firstItem="tNV-5N-Mqk" firstAttribute="trailing" secondItem="sdd-QL-wVs" secondAttribute="trailing" id="Swi-gu-X2v"/>
+                            <constraint firstItem="Eeg-2H-g38" firstAttribute="trailing" secondItem="97P-M9-KtH" secondAttribute="trailing" id="XaQ-Ve-H2c"/>
+                            <constraint firstItem="97P-M9-KtH" firstAttribute="trailing" secondItem="Xm2-Xe-4Dt" secondAttribute="trailing" id="YMF-PM-5Lt"/>
+                            <constraint firstItem="97P-M9-KtH" firstAttribute="top" secondItem="Xm2-Xe-4Dt" secondAttribute="bottom" constant="5" id="cMf-JA-uQr"/>
+                            <constraint firstItem="Ori-AR-QTb" firstAttribute="centerX" secondItem="56e-Rl-czD" secondAttribute="centerX" id="d8e-4t-frT"/>
+                            <constraint firstItem="Ori-AR-QTb" firstAttribute="leading" secondItem="DPv-YS-qEm" secondAttribute="leading" id="hJP-Tl-xZA"/>
+                            <constraint firstItem="Ori-AR-QTb" firstAttribute="top" secondItem="56e-Rl-czD" secondAttribute="bottom" constant="12" id="ivY-PN-j7g"/>
+                            <constraint firstItem="91g-da-Q2V" firstAttribute="top" secondItem="97P-M9-KtH" secondAttribute="top" id="lT6-tz-V9c"/>
+                            <constraint firstItem="erG-ah-pSk" firstAttribute="leading" secondItem="Eeg-2H-g38" secondAttribute="leading" id="m8y-KU-Llh"/>
+                            <constraint firstItem="MhG-Je-CJw" firstAttribute="leading" secondItem="DPv-YS-qEm" secondAttribute="leading" constant="20" symbolic="YES" id="pJr-Fa-eBy"/>
+                            <constraint firstItem="sdd-QL-wVs" firstAttribute="leading" secondItem="URv-Wl-sKp" secondAttribute="leading" id="sXE-nl-0nb"/>
+                            <constraint firstItem="tNV-5N-Mqk" firstAttribute="trailing" secondItem="IfU-oR-y6D" secondAttribute="trailing" id="thz-nf-Pdn"/>
+                            <constraint firstItem="tNV-5N-Mqk" firstAttribute="leading" secondItem="sdd-QL-wVs" secondAttribute="leading" id="uDx-Cc-EGT"/>
+                            <constraint firstAttribute="trailing" secondItem="Xm2-Xe-4Dt" secondAttribute="trailing" constant="20" symbolic="YES" id="uWH-Uy-YKT"/>
+                            <constraint firstItem="tNV-5N-Mqk" firstAttribute="leading" secondItem="IfU-oR-y6D" secondAttribute="leading" id="wFy-yW-bGM"/>
+                            <constraint firstItem="sdd-QL-wVs" firstAttribute="top" secondItem="URv-Wl-sKp" secondAttribute="bottom" constant="8" symbolic="YES" id="xhA-bA-kOt"/>
+                            <constraint firstItem="Eeg-2H-g38" firstAttribute="top" secondItem="erG-ah-pSk" secondAttribute="bottom" constant="8" symbolic="YES" id="yLU-RJ-9J0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Set Alarm" id="RG9-bO-e7c"/>
                     <connections>
                         <outlet property="cityTextField" destination="tNV-5N-Mqk" id="Twd-Cy-oHy"/>
                         <outlet property="countryTextField" destination="IfU-oR-y6D" id="NEe-im-jeb"/>
+                        <outlet property="currentLocationLabel" destination="Eeg-2H-g38" id="R2P-be-KIo"/>
                         <outlet property="datePicker" destination="Ori-AR-QTb" id="edd-7B-mtu"/>
                         <outlet property="metroLineColorView" destination="97P-M9-KtH" id="xX1-Cj-DBt"/>
                         <outlet property="metroStopLabel" destination="91g-da-Q2V" id="1W6-2Q-yc8"/>
@@ -564,6 +608,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="LocationIcon.png" width="105" height="141"/>
         <image name="MapIcon.png" width="157" height="146"/>
         <image name="ScheduleIcon.png" width="211" height="198"/>
+        <image name="clockIcon.png" width="191" height="191"/>
         <image name="clockIcon.png" width="191" height="191"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

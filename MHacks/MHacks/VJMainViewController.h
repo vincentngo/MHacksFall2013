@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "VJSetAlarmViewController.h"
+#import "AppState.h"
+
 @interface VJMainViewController : UIViewController <VJSetAlarmControllerDelegate>
 
 //Data sent to Parse

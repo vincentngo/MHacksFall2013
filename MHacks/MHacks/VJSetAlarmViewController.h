@@ -10,6 +10,8 @@
 #import "GeoCoderHelper.h"
 #import "VJTrainCheckerViewController.h"
 #import "ColorPickerHelper.h"
+#import "AppState.h"
+
 /*
  We use the Delegation Design Pattern for the communication between the
  SetNewAlarmViewController object and the RootViewController Object.
@@ -31,7 +33,7 @@
 
 @property (strong, nonatomic) GeoCoderHelper *geoCoderHelper;
 
-@property (nonatomic, strong) CLLocationManager *currentLocation;
+@property (strong, nonatomic) IBOutlet UILabel *currentLocationLabel;
 
 //TODO : Make an Appstate to hold the current Locations and other colors.
 

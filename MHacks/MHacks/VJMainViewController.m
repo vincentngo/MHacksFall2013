@@ -39,6 +39,9 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
     [self.locationManager startUpdatingLocation];
     
+    //Get Appstate's singleton, created for the first time.
+    [AppState sharedState];
+    
     //Obtains the users location...
     [self deviceLocation];
 }
@@ -57,7 +60,11 @@
 
 - (NSString *)deviceLocation {
     
+//    [AppState setCurrentLocation:self.locationManager];
+    
+#if 0
     NSLog(@"latitude %f, longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
+#endif
     
     return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
 }
@@ -75,6 +82,7 @@
     {
         VJSetAlarmViewController *setAlarmViewController = [segue destinationViewController];
         [setAlarmViewController setDelegate:self];
+        
     }
 }
 

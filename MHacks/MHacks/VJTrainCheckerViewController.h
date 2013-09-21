@@ -35,8 +35,6 @@
 @property (nonatomic, strong) NSString *colorSelected;
 @property (nonatomic, strong) NSString *stopSelected;
 
-//Current location to be passed here
-@property (nonatomic, strong) CLLocationManager *currentLocation;
 
 @end
 

@@ -45,6 +45,7 @@
     self.colorSelected = @"Red";
     
     
+
 }
 
 
@@ -78,9 +79,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
 
-    
     self.listOfStopPlaces = [self.metroLinesDict objectForKey:self.colorSelected];
     
     self.stopSelected = [self.listOfStopPlaces objectAtIndex: [indexPath row]];

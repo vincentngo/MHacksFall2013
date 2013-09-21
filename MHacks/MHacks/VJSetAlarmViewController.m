@@ -40,7 +40,12 @@
     
     self.navigationItem.rightBarButtonItem = self.doneButton;
     
-//    [self.metroLineColorView setOpaque:NO];
+    [AppState sharedState];
+    
+    CLLocationManager *currentLocation = [AppState getCurrentLocation];
+    
+    
+    [self.currentLocationLabel setText: [NSString stringWithFormat:@"Latitude is %f, and Longitude is %f", currentLocation.location.coordinate.latitude, currentLocation.location.coordinate.longitude]];
 }
 
 #pragma mark- SetTrainCheckerViewControllerDelegate
@@ -83,9 +88,6 @@
         VJTrainCheckerViewController *trainCheckerViewController = [segue destinationViewController];
         [trainCheckerViewController setDelegate:self];
         
-        
-        
-
     }
 }
 
