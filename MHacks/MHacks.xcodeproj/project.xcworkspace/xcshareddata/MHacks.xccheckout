@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9743E0AF-876A-44FE-8A6D-7B6E27E7A645</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MHacks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E3370413-4F4E-42A3-AD99-636A198DD137</key>
+		<string>https://github.com/vincentngo/MHacksFall2013.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MHacks/MHacks.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E3370413-4F4E-42A3-AD99-636A198DD137</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vincentngo/MHacksFall2013.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E3370413-4F4E-42A3-AD99-636A198DD137</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E3370413-4F4E-42A3-AD99-636A198DD137</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MHacksFall2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>
