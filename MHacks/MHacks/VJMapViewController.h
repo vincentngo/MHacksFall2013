@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/Mapkit.h>
 
-@interface VJMapViewController : UIViewController
+@interface VJMapViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 

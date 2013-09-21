@@ -35,6 +35,32 @@
     
 }
 
+- (void)zoomToUserLocation:(MKUserLocation *)userLocation
+{
+    if (!userLocation)
+        return;
+    
+    MKCoordinateRegion region;
+    region.center = userLocation.location.coordinate;
+    region.span = MKCoordinateSpanMake(0.01, 0.01);
+    region = [self.mapView regionThatFits:region];
+    [self.mapView setRegion:region animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self zoomToUserLocation:self.mapView.userLocation];
+}
+
+- (void)mapView:(MKMapView *)theMapView didUpdateToUserLocation:(MKUserLocation *)location
+{
+    [self zoomToUserLocation:location];
+}
+
+//TODO: add in capability to switch to different satiellites etc...
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

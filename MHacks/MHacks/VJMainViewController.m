@@ -32,13 +32,6 @@
     //TODO: Make Logo if have time...
     UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BiSeoLogo2"]];
     self.navigationItem.titleView = imageView;
-
-    // Obtain an object reference to the App Delegate object
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    // Set the local instance variable to the obj ref of the metroLines dictionary
-    // data structure created in the App Delegate class
-    self.metroLinesDict = appDelegate.dcMetroLinesList;
     
     //Set up location manager for getting the user's current location.
     self.locationManager = [[CLLocationManager alloc] init];
@@ -48,6 +41,16 @@
     
     //Obtains the users location...
     [self deviceLocation];
+}
+
+#pragma mark - VJSetAlarmViewController delegate
+
+- (void) setNewAlarmController:(VJSetAlarmViewController *)controller didFinishWithSave:(BOOL)save
+{
+    if (save)
+    {
+        
+    }
 }
 
 
@@ -64,6 +67,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier]isEqualToString:@"ShowAlarmView"])
+    {
+        VJSetAlarmViewController *setAlarmViewController = [segue destinationViewController];
+        [setAlarmViewController setDelegate:self];
+    }
 }
 
 @end

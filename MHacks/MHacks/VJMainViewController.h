@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VJSetAlarmViewController.h"
+@interface VJMainViewController : UIViewController <VJSetAlarmControllerDelegate>
 
-@interface VJMainViewController : UIViewController
-
-@property (nonatomic, strong) NSMutableDictionary *metroLinesDict;
-
+//Data sent to Parse
+@property (nonatomic, strong) NSString *selectedColor;
+@property (nonatomic, strong) NSString *selectedStop;
+@property (nonatomic, strong) NSDate *selectedDate;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+
+
 
 @end
