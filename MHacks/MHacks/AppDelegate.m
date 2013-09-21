@@ -29,7 +29,7 @@
     
     
     //Display custom
-//    [self displayCustomDesign];
+    [self displayCustomDesign];
 
     return YES;
 }
@@ -82,7 +82,7 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo
 - (void)displayCustomDesign
 {
     // style the navigation bar
-    UIColor* navColor = [UIColor colorWithRed:0/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f];
+    UIColor* navColor = [UIColor colorWithRed:128.0/255.0f green:128.0/255.0f blue:128.0/255.0f alpha:1.0f];
     [[UINavigationBar appearance] setBarTintColor:navColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];

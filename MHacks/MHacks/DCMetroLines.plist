@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Blue</key>
+	<array>
+		<string>Franconia-Springf&apos;ld</string>
+		<string>Van Dorn St</string>
+		<string>King Street</string>
+		<string>Braddock Road</string>
+		<string>National Arpt</string>
+		<string>Crystal City</string>
+		<string>Pentagon City</string>
+		<string>Pentagon</string>
+		<string>Arlington Cemetery</string>
+		<string>Rosslyn</string>
+		<string>Foggy Bottom</string>
+		<string>Farragut West</string>
+		<string>McPherson Square</string>
+		<string>Metro Center</string>
+		<string>Federal Triangle</string>
+		<string>Smithsonian</string>
+		<string>L&apos;Enfant Plaza</string>
+		<string>Federal Center SW</string>
+		<string>Capitol South</string>
+		<string>Eastern Market</string>
+		<string>Potomac Avenue</string>
+		<string>Stadium Armory</string>
+		<string>Benning Road</string>
+		<string>Capitol Heights</string>
+		<string>Addison Road</string>
+		<string>Morgan Blvd</string>
+		<string>Largo Town Center</string>
+	</array>
+	<key>Yellow</key>
+	<array>
+		<string>Huntington</string>
+		<string>Eisenhower Avenue</string>
+		<string>King Street</string>
+		<string>Braddock Road</string>
+		<string>National Arpt</string>
+		<string>Crystal City</string>
+		<string>Pentagon City</string>
+		<string>Pentagon</string>
+		<string>L&apos;Enfant Plaza</string>
+		<string>Archives</string>
+		<string>Gallery Place</string>
+		<string>Mt Vernon Sq</string>
+		<string>Shaw</string>
+		<string>U Street</string>
+		<string>Columbia Heights</string>
+		<string>Georgia Avenue</string>
+		<string>Fort Totten</string>
+	</array>
+	<key>Green</key>
+	<array>
+		<string>Branch Avenue</string>
+		<string>Suitland</string>
+		<string>Naylor Road</string>
+		<string>Southern Ave</string>
+		<string>Congress Height</string>
+		<string>Anacostia</string>
+		<string>Navy Yard</string>
+		<string>Waterfront</string>
+		<string>L&apos;EnfantPlaza</string>
+		<string>Archives</string>
+		<string>Gallery Place</string>
+		<string>Mt Vernon Sq</string>
+		<string>Shaw</string>
+		<string>U Street</string>
+		<string>Columbia Heights</string>
+		<string>Georgia Avenue</string>
+		<string>Fort Totten</string>
+		<string>West Hyattsville</string>
+		<string>Prince Georges Plaza</string>
+		<string>College Park</string>
+		<string>Greenbelt</string>
+	</array>
+	<key>Orange</key>
+	<array>
+		<string>Vienna</string>
+		<string>Dunn Loring</string>
+		<string>W Falls Church</string>
+		<string>E Falls Church</string>
+		<string>Ballston</string>
+		<string>Virginia Square</string>
+		<string>Clarendon</string>
+		<string>Court House</string>
+		<string>Rosslyn</string>
+		<string>Foggy Bottom</string>
+		<string>Farragut West</string>
+		<string>McPherson Square</string>
+		<string>Metro Center</string>
+		<string>Federal Triangle</string>
+		<string>Smithsonian</string>
+		<string>L&apos;Enfant Plaza</string>
+		<string>Federal Center SW</string>
+		<string>Capital South</string>
+		<string>Eastern Market</string>
+		<string>Potomac Avenue</string>
+		<string>Stadium Armory</string>
+		<string>Minnesota Avenue</string>
+		<string>Deanwood</string>
+		<string>Cheverly</string>
+		<string>Landover</string>
+		<string>New Carrollton</string>
+	</array>
+	<key>Red</key>
+	<array>
+		<string>Shady Grove</string>
+		<string>Rockville</string>
+		<string>Twinbrook</string>
+		<string>White Flint</string>
+		<string>Grosvenor</string>
+		<string>Medical Center</string>
+		<string>Bethesda</string>
+		<string>Friendship Heights</string>
+		<string>Tenleytown</string>
+		<string>Van Ness UDC</string>
+		<string>Cleveland Park</string>
+		<string>Woodley Park Zoo</string>
+		<string>Dupont Circle</string>
+		<string>Farragut North</string>
+		<string>Metro Center</string>
+		<string>Gallery Place</string>
+		<string>Judiciary Square</string>
+		<string>Union Station</string>
+		<string>New York Avenue</string>
+		<string>Rhode Island Avenue</string>
+		<string>Brookland</string>
+		<string>Fort Totten</string>
+		<string>Takoma</string>
+		<string>Silver Spring</string>
+		<string>Forest Glen</string>
+		<string>Wheaton</string>
+		<string>Glenmont</string>
+	</array>
+</dict>
+</plist>

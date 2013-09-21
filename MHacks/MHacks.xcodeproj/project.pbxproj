@@ -29,6 +29,11 @@
 		1080306C17EDB5BA0049D054 /* BiSeoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080306B17EDB5BA0049D054 /* BiSeoLogo.png */; };
 		1080307017EDB6C00049D054 /* VJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080306F17EDB6C00049D054 /* VJMainViewController.m */; };
 		1080307217EDB8530049D054 /* BiSeoLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080307117EDB8530049D054 /* BiSeoLogo2.png */; };
+		1080307517EDC9B10049D054 /* MapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080307417EDC9B10049D054 /* MapIcon.png */; };
+		1080307717EDCA2A0049D054 /* NewScheduleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080307617EDCA2A0049D054 /* NewScheduleIcon.png */; };
+		1080307917EDCAB50049D054 /* FAQIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080307817EDCAB50049D054 /* FAQIcon.png */; };
+		1080307B17EDCB370049D054 /* ScheduleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1080307A17EDCB370049D054 /* ScheduleIcon.png */; };
+		1080307D17EDD5360049D054 /* DCMetroLines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1080307C17EDD5360049D054 /* DCMetroLines.plist */; };
 		10C6ADF817ED565000238F74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6ADF717ED565000238F74 /* Foundation.framework */; };
 		10C6ADFA17ED565000238F74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6ADF917ED565000238F74 /* CoreGraphics.framework */; };
 		10C6ADFC17ED565000238F74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6ADFB17ED565000238F74 /* UIKit.framework */; };
@@ -85,6 +90,11 @@
 		1080306E17EDB6C00049D054 /* VJMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJMainViewController.h; sourceTree = "<group>"; };
 		1080306F17EDB6C00049D054 /* VJMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJMainViewController.m; sourceTree = "<group>"; };
 		1080307117EDB8530049D054 /* BiSeoLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiSeoLogo2.png; sourceTree = "<group>"; };
+		1080307417EDC9B10049D054 /* MapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapIcon.png; sourceTree = "<group>"; };
+		1080307617EDCA2A0049D054 /* NewScheduleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewScheduleIcon.png; sourceTree = "<group>"; };
+		1080307817EDCAB50049D054 /* FAQIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAQIcon.png; sourceTree = "<group>"; };
+		1080307A17EDCB370049D054 /* ScheduleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScheduleIcon.png; sourceTree = "<group>"; };
+		1080307C17EDD5360049D054 /* DCMetroLines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DCMetroLines.plist; sourceTree = "<group>"; };
 		10C6ADF417ED565000238F74 /* MHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C6ADF717ED565000238F74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10C6ADF917ED565000238F74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -179,6 +189,10 @@
 		1080307317EDC3480049D054 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1080307A17EDCB370049D054 /* ScheduleIcon.png */,
+				1080307817EDCAB50049D054 /* FAQIcon.png */,
+				1080307617EDCA2A0049D054 /* NewScheduleIcon.png */,
+				1080307417EDC9B10049D054 /* MapIcon.png */,
 				1080306B17EDB5BA0049D054 /* BiSeoLogo.png */,
 				1080307117EDB8530049D054 /* BiSeoLogo2.png */,
 				1080306917EDB12E0049D054 /* MetroBackground@2x.png */,
@@ -241,6 +255,7 @@
 				10C6AE0917ED565000238F74 /* Main.storyboard */,
 				10C6AE0F17ED565000238F74 /* Images.xcassets */,
 				10C6ADFE17ED565000238F74 /* Supporting Files */,
+				1080307C17EDD5360049D054 /* DCMetroLines.plist */,
 			);
 			path = MHacks;
 			sourceTree = "<group>";
@@ -351,12 +366,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C6AE1017ED565000238F74 /* Images.xcassets in Resources */,
+				1080307B17EDCB370049D054 /* ScheduleIcon.png in Resources */,
 				1080306417ED9D500049D054 /* plus@2x.png in Resources */,
 				1080306A17EDB12E0049D054 /* MetroBackground@2x.png in Resources */,
 				10C6AE0217ED565000238F74 /* InfoPlist.strings in Resources */,
 				10C6AE0B17ED565000238F74 /* Main.storyboard in Resources */,
+				1080307517EDC9B10049D054 /* MapIcon.png in Resources */,
+				1080307717EDCA2A0049D054 /* NewScheduleIcon.png in Resources */,
+				1080307D17EDD5360049D054 /* DCMetroLines.plist in Resources */,
 				1080306217ED90FE0049D054 /* menuButton@2x.png in Resources */,
 				1080307217EDB8530049D054 /* BiSeoLogo2.png in Resources */,
+				1080307917EDCAB50049D054 /* FAQIcon.png in Resources */,
 				1080306C17EDB5BA0049D054 /* BiSeoLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
