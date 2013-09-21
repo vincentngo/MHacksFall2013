@@ -30,6 +30,41 @@
     
     //Display custom
     [self displayCustomDesign];
+    
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    
+#if 0
+    NSLog(@"documentsDirectoryPath is: %@", documentsDirectoryPath);
+#endif
+    
+    NSString *plistFilePathInDocumentsDirectory = [documentsDirectoryPath stringByAppendingPathComponent:@"DCMetroLines.plist"];
+    
+    
+#if 0
+    NSLog(@"plistFilePathInDD is %@", plistFilePathInDocumentsDirectory);
+#endif
+    
+    NSMutableDictionary *metroData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInDocumentsDirectory];
+    
+    if (!metroData)
+    {
+        /*
+         In this case, the MeterConversionList.plist file does not exist in the documents directory.
+         This will happen when the user launches the app for the very first time.
+         Therefore, read the plist file from the main bundle to show the user some example favorite cities.
+         
+         Get the file path to the MeterConversionList.plist file in application's main bundle.
+         */
+        
+        NSString *plistFilePathInMainBundle = [[NSBundle mainBundle] pathForResource:@"DCMetroLines" ofType:@"plist"];
+        
+        // Instantiate a modifiable dictionary and initialize it with the content of the plist file in main bundle
+        metroData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInMainBundle];
+    }
+    
+    self.dcMetroLinesList = metroData;
 
     return YES;
 }

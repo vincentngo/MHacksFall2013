@@ -10,4 +10,8 @@
 
 @interface VJMainViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableDictionary *metroLinesDict;
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+
 @end

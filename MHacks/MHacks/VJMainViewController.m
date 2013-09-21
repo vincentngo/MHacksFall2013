@@ -7,6 +7,7 @@
 //
 
 #import "VJMainViewController.h"
+#import "AppDelegate.h"
 
 @interface VJMainViewController ()
 
@@ -26,10 +27,38 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // see a cat image as a title
+    
+    // Our Logo will go here
+    //TODO: Make Logo if have time...
     UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BiSeoLogo2"]];
     self.navigationItem.titleView = imageView;
+
+    // Obtain an object reference to the App Delegate object
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    // Set the local instance variable to the obj ref of the metroLines dictionary
+    // data structure created in the App Delegate class
+    self.metroLinesDict = appDelegate.dcMetroLinesList;
+    
+    //Set up location manager for getting the user's current location.
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
+    [self.locationManager startUpdatingLocation];
+    
+    //Obtains the users location...
+    [self deviceLocation];
 }
+
+
+
+- (NSString *)deviceLocation {
+    
+    NSLog(@"latitude %f, longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
+    
+    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
