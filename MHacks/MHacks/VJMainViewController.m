@@ -52,6 +52,19 @@
 {
     if (save)
     {
+        //Obtaining the designated address
+        self.desginatedCity = controller.cityTextField.text;
+        self.desginatedCountry = controller.countryTextField.text;
+        self.desginatedStreet = controller.streetTextField.text;
+        
+        //metro line color selected
+        self.selectedColor = controller.metroColorSelected;
+        
+        //get the stop user is currently at.
+        self.selectedStop = controller.metroStopLabel.text;
+        
+        //get date user has set to want to leave.
+        self.selectedDate = controller.datePicker.date;
         
     }
 }
@@ -60,9 +73,9 @@
 
 - (NSString *)deviceLocation {
     
-//    [AppState setCurrentLocation:self.locationManager];
+    [[AppState sharedState] setLocationManager:self.locationManager];
     
-#if 0
+#if 1
     NSLog(@"latitude %f, longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
 #endif
     

@@ -40,10 +40,7 @@
     
     self.navigationItem.rightBarButtonItem = self.doneButton;
     
-    [AppState sharedState];
-    
-    CLLocationManager *currentLocation = [AppState getCurrentLocation];
-    
+    CLLocationManager *currentLocation = [[AppState sharedState]locationManager];
     
     [self.currentLocationLabel setText: [NSString stringWithFormat:@"Latitude is %f, and Longitude is %f", currentLocation.location.coordinate.latitude, currentLocation.location.coordinate.longitude]];
 }
@@ -56,6 +53,8 @@
     {
         self.metroStopLabel.text = controller.stopSelected;
         
+        self.metroColorSelected = controller.colorSelected;
+        
         [self.metroLineColorView setBackgroundColor:[ColorPickerHelper getColorWithColorName:controller.colorSelected]];
         
             [self.navigationController popViewControllerAnimated:YES];
@@ -65,9 +64,29 @@
 - (void)donePressed
 {
     
-    [self.delegate setNewAlarmController:self didFinishWithSave:YES];
+    if ([self.countryTextField.text length] == 0 && [self.cityTextField.text length] == 0 &&  [self.streetTextField.text length] == 0)
+    {
+        [self displayTextfieldEmptyAlert];
+    }
+    else
+    {
+       [self.delegate setNewAlarmController:self didFinishWithSave:YES];
+    }
     
     
+    
+    
+}
+
+- (void)displayTextfieldEmptyAlert
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Address Field"
+                                                    message:@"You must include the street, city and country of your designated area."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning

@@ -25,6 +25,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *metroLineColorView;
 @property (strong, nonatomic) IBOutlet UILabel *metroStopLabel;
+@property (strong, nonatomic) NSString *metroColorSelected;
 
 //user generated fields
 @property (strong, nonatomic) IBOutlet UITextField *streetTextField;

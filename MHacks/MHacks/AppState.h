@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-extern NSString *sUserCurrentLocation;
+//extern NSString *sUserCurrentLocation;
 
 @interface AppState : NSObject
 
-+ (void) setCurrentLocation: (CLLocationManager *) currentLocation;
-+ (CLLocationManager *) getCurrentLocation;
+//- (void) setCurrentLocation: (CLLocationManager *) currentLocation;
+//- (CLLocationManager *) getCurrentLocation;
+//
+@property CLLocationManager *locationManager;
 
 + (AppState *)sharedState;
 

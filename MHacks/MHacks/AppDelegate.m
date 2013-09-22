@@ -7,27 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    //Parse stuff
-    [Parse setApplicationId:@"Q1VtTnkXXuFFd95V60wK1XOjlYDGd9cKXDPLjf5P"
-                  clientKey:@"rOIT6XkPTWIeXVUxHeNOblMk0xsiUxgnaN93yW4L"];
-    
-    
-    //Tracks statistics
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    //Registering for notifications
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
-     UIRemoteNotificationTypeAlert|
-     UIRemoteNotificationTypeSound];
-    
-    
     //Display custom
     [self displayCustomDesign];
     
@@ -69,22 +55,8 @@
     return YES;
 }
 
-//Store the device token and handle the UI for notifications by adding the following to your main app delegate:
 
-- (void)application:(UIApplication *)application
-didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation saveInBackground];
-}
 
-- (void)application:(UIApplication *)application
-didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-    [PFPush handlePush:userInfo];
-}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

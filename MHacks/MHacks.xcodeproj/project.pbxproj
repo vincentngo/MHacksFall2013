@@ -11,7 +11,6 @@
 		10399DD817EE64E5003D82F8 /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 10399DD717EE64E5003D82F8 /* AppState.m */; };
 		104F7A3717EE1AD4008B9AD8 /* VJSetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F7A3617EE1AD4008B9AD8 /* VJSetAlarmViewController.m */; };
 		104F7A3A17EE2632008B9AD8 /* VJTrainCheckerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F7A3917EE2632008B9AD8 /* VJTrainCheckerViewController.m */; };
-		1080303C17ED80FE0049D054 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1080303B17ED80FE0049D054 /* Parse.framework */; };
 		1080303E17ED819D0049D054 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1080303D17ED819D0049D054 /* AudioToolbox.framework */; };
 		1080304017ED81A70049D054 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1080303F17ED81A70049D054 /* CFNetwork.framework */; };
 		1080304217ED81BC0049D054 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1080304117ED81BC0049D054 /* libz.1.1.3.dylib */; };
@@ -65,6 +64,7 @@
 		10C6AE2117ED565000238F74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10C6AE1F17ED565000238F74 /* InfoPlist.strings */; };
 		10C6AE2317ED565000238F74 /* MHacksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6AE2217ED565000238F74 /* MHacksTests.m */; };
 		10C6AE4A17ED666B00238F74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6AE4917ED666B00238F74 /* CoreLocation.framework */; };
+		10E32D3E17EE6BE50070C550 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E32D3D17EE6BE50070C550 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,6 @@
 		104F7A3617EE1AD4008B9AD8 /* VJSetAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJSetAlarmViewController.m; sourceTree = "<group>"; };
 		104F7A3817EE2632008B9AD8 /* VJTrainCheckerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJTrainCheckerViewController.h; sourceTree = "<group>"; };
 		104F7A3917EE2632008B9AD8 /* VJTrainCheckerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJTrainCheckerViewController.m; sourceTree = "<group>"; };
-		1080303B17ED80FE0049D054 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		1080303D17ED819D0049D054 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1080303F17ED81A70049D054 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1080304117ED81BC0049D054 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -163,6 +162,7 @@
 		10C6AE2017ED565000238F74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10C6AE2217ED565000238F74 /* MHacksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHacksTests.m; sourceTree = "<group>"; };
 		10C6AE4917ED666B00238F74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10E32D3D17EE6BE50070C550 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +180,10 @@
 				1080304017ED81A70049D054 /* CFNetwork.framework in Frameworks */,
 				1080303E17ED819D0049D054 /* AudioToolbox.framework in Frameworks */,
 				10C6AE4A17ED666B00238F74 /* CoreLocation.framework in Frameworks */,
+				10E32D3E17EE6BE50070C550 /* Parse.framework in Frameworks */,
 				10C6ADFA17ED565000238F74 /* CoreGraphics.framework in Frameworks */,
 				10C6ADFC17ED565000238F74 /* UIKit.framework in Frameworks */,
 				10C6ADF817ED565000238F74 /* Foundation.framework in Frameworks */,
-				1080303C17ED80FE0049D054 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +335,7 @@
 		10C6ADF617ED565000238F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10E32D3D17EE6BE50070C550 /* Parse.framework */,
 				1080306517ED9E6B0049D054 /* MapKit.framework */,
 				1080304B17ED81E70049D054 /* SystemConfiguration.framework */,
 				1080304917ED81DF0049D054 /* StoreKit.framework */,
@@ -344,7 +345,6 @@
 				1080304117ED81BC0049D054 /* libz.1.1.3.dylib */,
 				1080303F17ED81A70049D054 /* CFNetwork.framework */,
 				1080303D17ED819D0049D054 /* AudioToolbox.framework */,
-				1080303B17ED80FE0049D054 /* Parse.framework */,
 				10C6AE4917ED666B00238F74 /* CoreLocation.framework */,
 				10C6ADF717ED565000238F74 /* Foundation.framework */,
 				10C6ADF917ED565000238F74 /* CoreGraphics.framework */,

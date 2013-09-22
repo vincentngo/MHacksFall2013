@@ -37,12 +37,12 @@ NSString *sUserCurrentLocation = @"userCurrentLocation";
     return self;
 }
 
-+ (void) setCurrentLocation:(CLLocationManager *)currentLocation
+- (void) setCurrentLocation:(CLLocationManager *)currentLocation
 {
     [[NSUserDefaults standardUserDefaults] setValue:currentLocation forKey:sUserCurrentLocation];
 }
 
-+ (CLLocationManager *) getCurrentLocation
+- (CLLocationManager *) getCurrentLocation
 {
     id obj = [[NSUserDefaults standardUserDefaults] objectForKey: sUserCurrentLocation];
     

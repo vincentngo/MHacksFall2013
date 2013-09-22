@@ -18,6 +18,10 @@
 @property (nonatomic, strong) NSDate *selectedDate;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
+@property (nonatomic, strong) NSString *desginatedCountry;
+@property (nonatomic, strong) NSString *desginatedCity;
+@property (nonatomic, strong) NSString *desginatedStreet;
+
 
 
 @end
