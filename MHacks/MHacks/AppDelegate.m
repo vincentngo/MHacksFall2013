@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 
 @implementation AppDelegate
@@ -14,6 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
+    
     //Display custom
     [self displayCustomDesign];
     
@@ -51,13 +53,21 @@
     }
     
     self.dcMetroLinesList = metroData;
+    
+    [Parse setApplicationId:@"Q1VtTnkXXuFFd95V60wK1XOjlYDGd9cKXDPLjf5P"
+                  clientKey:@"rOIT6XkPTWIeXVUxHeNOblMk0xsiUxgnaN93yW4L"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
     return YES;
 }
 
-
-
-
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current Installation and save it to Parse.
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -79,6 +89,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

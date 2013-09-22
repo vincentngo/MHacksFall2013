@@ -43,6 +43,10 @@
     CLLocationManager *currentLocation = [[AppState sharedState]locationManager];
     
     [self.currentLocationLabel setText: [NSString stringWithFormat:@"Latitude is %f, and Longitude is %f", currentLocation.location.coordinate.latitude, currentLocation.location.coordinate.longitude]];
+    
+    self.metroLineColorView = nil;
+    self.metroStopLabel = nil;
+    self.metroColorSelected = nil;
 }
 
 #pragma mark- SetTrainCheckerViewControllerDelegate
@@ -57,25 +61,43 @@
         
         [self.metroLineColorView setBackgroundColor:[ColorPickerHelper getColorWithColorName:controller.colorSelected]];
         
-            [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
 - (void)donePressed
 {
     
-    if ([self.countryTextField.text length] == 0 && [self.cityTextField.text length] == 0 &&  [self.streetTextField.text length] == 0)
+    if ((self.metroLineColorView == nil && self.metroStopLabel == nil && self.metroColorSelected == nil))
+    {
+        [self displayNoMetroStopSelectedAlert];
+    }
+    else if([self.countryTextField.text length] == 0 && [self.cityTextField.text length] == 0 &&  [self.streetTextField.text length] == 0)
     {
         [self displayTextfieldEmptyAlert];
     }
     else
     {
-       [self.delegate setNewAlarmController:self didFinishWithSave:YES];
+        [self.delegate setNewAlarmController:self didFinishWithSave:YES];
+        [self.navigationController popViewControllerAnimated:YES];
     }
     
     
     
     
+}
+//TODO: Bug fix, UIView...
+
+
+- (void)displayNoMetroStopSelectedAlert
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Metro Stop"
+                                                    message:@"Please select a metro stop, by hitting the disclosure indicator."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    
+    [alert show];
 }
 
 - (void)displayTextfieldEmptyAlert
@@ -106,7 +128,6 @@
     {
         VJTrainCheckerViewController *trainCheckerViewController = [segue destinationViewController];
         [trainCheckerViewController setDelegate:self];
-        
     }
 }
 

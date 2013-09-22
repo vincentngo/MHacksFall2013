@@ -9,6 +9,9 @@
 #import "VJMainViewController.h"
 #import "AppDelegate.h"
 
+
+
+
 @interface VJMainViewController ()
 
 @end
@@ -44,6 +47,46 @@
     
     //Obtains the users location...
     [self deviceLocation];
+    
+//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+//    [testObject setObject:@"apple" forKey:@"chickens"];
+//    [testObject save];
+    
+//    PFObject *gameScore = [PFObject objectWithClassName:@"TestObjects"];
+//    [gameScore setObject:[NSNumber numberWithInt:1337] forKey:@"score"];
+//    [gameScore setObject:@"Sean Plott" forKey:@"playerName"];
+//    [gameScore setObject:[NSNumber numberWithBool:NO] forKey:@"cheatMode"];
+//    [gameScore saveInBackground];
+    
+//    NSNumber *number = [NSNumber numberWithInt:42];
+//    NSString *string = [NSString stringWithFormat:@"the number is %@", number];
+//    NSDate *date = [NSDate date];
+//    NSData *data = [@"foo" dataUsingEncoding:NSUTF8StringEncoding];
+//    NSArray *array = [NSArray arrayWithObjects:string, number, nil];
+//    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:number, @"number",
+//                                string, @"string",
+//                                nil];
+//    NSNull *null = [NSNull null];
+//    
+//    PFObject *bigObject = [PFObject objectWithClassName:@"BigObject"];
+//    [bigObject setObject:number     forKey:@"myNumber"];
+//    [bigObject setObject:string     forKey:@"myString"];
+//    [bigObject setObject:date       forKey:@"myDate"];
+//    [bigObject setObject:data       forKey:@"myData"];
+//    [bigObject setObject:array      forKey:@"myArray"];
+//    [bigObject setObject:dictionary forKey:@"myDictionary"];
+//    [bigObject setObject:null       forKey:@"myNull"];
+//    [bigObject saveInBackground];
+//    
+//    
+//    
+//    [PFCloud callFunctionInBackground:@""
+//                       withParameters:@{@"movie": @"The Matrix"}
+//                                block:^(NSNumber *ratings, NSError *error) {
+//                                    if (!error) {
+//                                        // ratings is 4.5
+//                                    }
+//                                }];
 }
 
 #pragma mark - VJSetAlarmViewController delegate
@@ -66,6 +109,11 @@
         //get date user has set to want to leave.
         self.selectedDate = controller.datePicker.date;
         
+        self.longtitude = [[[[AppState sharedState] locationManager]location]coordinate].longitude;
+        
+        self.latitude = [[[[AppState sharedState] locationManager]location]coordinate].latitude;
+        
+
     }
 }
 

@@ -10,6 +10,9 @@
 #import "VJSetAlarmViewController.h"
 #import "AppState.h"
 
+
+
+
 @interface VJMainViewController : UIViewController <VJSetAlarmControllerDelegate>
 
 //Data sent to Parse
@@ -17,6 +20,9 @@
 @property (nonatomic, strong) NSString *selectedStop;
 @property (nonatomic, strong) NSDate *selectedDate;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+
+@property (nonatomic, assign) double longtitude;
+@property (nonatomic, assign) double latitude;
 
 @property (nonatomic, strong) NSString *desginatedCountry;
 @property (nonatomic, strong) NSString *desginatedCity;

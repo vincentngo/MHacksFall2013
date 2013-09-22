@@ -65,6 +65,7 @@
 		10C6AE2317ED565000238F74 /* MHacksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6AE2217ED565000238F74 /* MHacksTests.m */; };
 		10C6AE4A17ED666B00238F74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6AE4917ED666B00238F74 /* CoreLocation.framework */; };
 		10E32D3E17EE6BE50070C550 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E32D3D17EE6BE50070C550 /* Parse.framework */; };
+		10E32D4F17EEA76B0070C550 /* ParseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E32D4E17EEA76B0070C550 /* ParseHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,8 @@
 		10C6AE2217ED565000238F74 /* MHacksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHacksTests.m; sourceTree = "<group>"; };
 		10C6AE4917ED666B00238F74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		10E32D3D17EE6BE50070C550 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		10E32D4D17EEA76B0070C550 /* ParseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseHelper.h; sourceTree = "<group>"; };
+		10E32D4E17EEA76B0070C550 /* ParseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 			children = (
 				10399DCE17EE4489003D82F8 /* ColorPickerHelper.h */,
 				10399DCF17EE4489003D82F8 /* ColorPickerHelper.m */,
+				10E32D4D17EEA76B0070C550 /* ParseHelper.h */,
+				10E32D4E17EEA76B0070C550 /* ParseHelper.m */,
 			);
 			name = "Helper Classes";
 			sourceTree = "<group>";
@@ -522,6 +527,7 @@
 				1080309D17EDE7880049D054 /* AFJSONRequestOperation.m in Sources */,
 				10399DD817EE64E5003D82F8 /* AppState.m in Sources */,
 				1080305D17ED90320049D054 /* MainViewController.m in Sources */,
+				10E32D4F17EEA76B0070C550 /* ParseHelper.m in Sources */,
 				104F7A3717EE1AD4008B9AD8 /* VJSetAlarmViewController.m in Sources */,
 				108030A217EDE7880049D054 /* UIImageView+AFNetworking.m in Sources */,
 				1080307017EDB6C00049D054 /* VJMainViewController.m in Sources */,
